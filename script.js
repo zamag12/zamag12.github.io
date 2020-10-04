@@ -6,7 +6,7 @@
 */ 
 
 function addNumbers() {
-	//INPUT
+	//INPUT GOES HERE
 	 let x = parseFloat(document.getElementById('number1').value);
 	 let y = parseFloat(document.getElementById('number2').value);
 	//PROCESSING
