@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale= 1.0">
+    <title>CIT 160 Pounds to Kilograms - Zama Gcukumana</title>
+    <link rel="stylesheet" href="styles/poundsToKilograms.css">
+</head>
+
+<body>
+    <header>
+        <h1>Week 5: Convert Kilograms to Pounds.</h1>
+        <h2>Zama Gcukumana</h2>
+    </header>
+    <main>
+        <h3>Convert Kilograms to Pounds</h3>
+        <label>Enter Number Of Pounds: <input type="text" id="pounds"></label>
+        <label><button onclick="poundsToKilograms()">Convert to Kilograms</button></label>
+        <hr>
+        <p><span id="output"></span></p>
+    </main>
+    <footer>
+        &copy;2020 &bull; Zama Gcukumana &bull; BYU-Idaho &bull; CIT 160
+    </footer>
+    <script>
+        function poundsToKilograms() {
+                // Input: Get pound number from the user.
+                let pounds = parseFloat(document.getElementById("pounds")).value;
+                
+                // Processing: Convert pounds to kilograms.
+                let kilograms = 25 / 2.2;
+                
+                // Output:Show calculations on the screen.
+               document.getElementById("output").innerHTML = kilograms.toFixed(1) + " Kilograms";
+            }
+    </script>
+</body>
+
+</html>

@@ -47,3 +47,7 @@ input,
 button {
 	padding: .3rem;
 }
+
+body {
+	background-color: rgb(157, 231, 231);
+}
