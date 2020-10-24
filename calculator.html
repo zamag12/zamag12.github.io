@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale= 1.0">
+    <title>CIT 160 Template Document - Zama B. Gcukumana</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Week 6: Simple Calculor</h1>
+        <h2>Zama B. Gcukumana</h2>
+    </header>
+    <main>
+        <h3>Calculator</h3>
+        <label>Enter Number One: <input type="text" id="number1"></label><br>
+        <label>
+            <select name="calculator" id="calculator">
+                <option value="" disabled selected><--Select Operator--></option>
+                <option id="+">+</option>
+                <option id="-">-</option>
+                <option id="*">*</option>
+                <option id="/">/</option>
+            </select>
+        </label><br>
+        <label>Enter Number Two: <input type="text" id="number2"></label>
+        
+        <label><button onclick="getResults()">Calculate</button></label>
+        <hr>
+        <p><span id="output"></span></p>
+    </main>
+    <footer>
+        &copy;2020 &bull; Zama B. Gcukumana &bull; BYU-Idaho &bull; CIT 160
+    </footer>
+    <script>
+        /*function getResults(){
+            let results;
+            let number1 = document.getElementById("number1").value;
+            let number1 = document.getElementById("number1").value;
+            let operator = document.getElementById("operator").value;
+            */
+            let results;
+            switch (operator) {
+                case "+":
+                    answerKey = a + b;
+                    break;
+
+                case "-":
+                    answerKey = a - b;
+                    break;
+
+                case "*":
+                    answerKey = a * b;
+                    break;
+
+                case "/":
+                    answerKey = a / b;
+                    break;
+                    default:
+                        results = "What is the product?";
+            }
+            document.getElementById("output").innerHTML = results;
+        //}
+
+    </script>
+</body>
+
+</html>

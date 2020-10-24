@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tax Pay</title>
+    </head>
+    <body>
+        <header>
+            <h1>Employee's After Taxpay</h1>
+        </header>
+        <main>
+            <p>The total tax pay</p>
+            <label>Total Regular Hrs: <input type="text" id="regularHrs"></label><br>
+            <label>Total Overtime Hrs: <input type="text" id="overtimeHrs"></label>
+            <button type="button" onclick="totalTaxPay()">Calculate</button>
+            <p><span id="output"></span></p>
+
+        </main>
+        <footer>
+
+        </footer>
+        <script>
+            function cylinderVolume() {
+                //Input: Get total gedular hours and total overtime hours from the user.
+                let totalRegularHrs = parseFloat(document.getElementById("totalRegularHrs").value)
+                let totalOvertimeHrs = parseFloat(document.getElementById("totalOvertimeHrs").value)
+                const ragularPayRate = 15;
+                const overtimePayRate = 22.50;
+            
+
+                //Processing: Compute the the taxpy of the employee.
+                let taxPay = 15 * totalRegularHrs + (22.50 * totalOvertimeHrs);
+
+                //Output: Display the results on the screen for the user.
+                document.getElementById("output").innerHTML = taxPay;
+            }
+        </script>
+    </body>
+
+</html>

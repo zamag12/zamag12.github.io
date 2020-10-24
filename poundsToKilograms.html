@@ -29,7 +29,7 @@
                 let pounds = parseFloat(document.getElementById("pounds")).value;
                 
                 // Processing: Convert pounds to kilograms.
-                let kilograms = 25 / 2.2;
+                let kilograms = pounds / 2.2;
                 
                 // Output:Show calculations on the screen.
                document.getElementById("output").innerHTML = kilograms.toFixed(1) + " Kilograms";
