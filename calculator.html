@@ -44,24 +44,28 @@
             switch (operator) {
                 case "+":
                     answerKey = number1 + number2;
-                    result = "Correct.";
+                    result = `${number1} + ${number2} = ${result}`;
                     break;
 
                 case "-":
                     answerKey = number1 - number2;
+                    result = `${number1} - ${number2} = ${result}`;
                     break;
 
                 case "*":
                     answerKey = number1 * number2;
+                    result = `${number1} * ${number2} = ${result}`;
                     break;
 
                 case "/":
                     answerKey = number1 / number2;
+                    result = `${number1} / ${number2} = ${result}`;
                     break;
                     default:
                         result = "Wrong answer, please try again!";
+            document.getElementById("output").innerHTML = result;            
             }
-            document.getElementById("output").innerHTML = result;
+            
 
     </script>
 </body>
